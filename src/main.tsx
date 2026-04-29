@@ -11,9 +11,11 @@ import "./styles/app.css";
 const root = document.getElementById("root");
 if (!root) throw new Error("Missing #root element");
 
+const basename = import.meta.env.BASE_URL.replace(/\/$/, "") || "/";
+
 ReactDOM.createRoot(root).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <App />
     </BrowserRouter>
   </React.StrictMode>
