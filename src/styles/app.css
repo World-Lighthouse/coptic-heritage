@@ -535,7 +535,6 @@ a.button.button--primary {
 .empty-state__pattern {
   position: absolute;
   inset: 0;
-  opacity: 0.05;
   color: var(--ink);
   z-index: 0;
 }
@@ -590,4 +589,80 @@ a.button.button--primary {
   color: var(--ink-muted);
   font-size: 1rem;
   margin: 0 auto;
+}
+
+/* Dev — ornaments story ------------------------------------------------ */
+
+.dev-ornaments {
+  max-width: 56rem;
+  margin: 0 auto;
+}
+
+.dev-ornaments__header {
+  margin-bottom: var(--space-12);
+}
+
+.dev-ornaments__eyebrow {
+  font-family: var(--font-display);
+  font-size: 0.8125rem;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  color: var(--ink-muted);
+  margin: 0 0 var(--space-4);
+}
+
+.dev-ornaments__intro {
+  margin-top: var(--space-4);
+  color: var(--ink-muted);
+}
+
+.dev-ornaments__intro code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.9em;
+  padding: 0 0.25em;
+}
+
+.dev-panel {
+  margin-block: var(--space-12);
+  padding-top: var(--space-6);
+  border-top: 1px solid var(--rule);
+}
+
+.dev-panel h2 {
+  font-size: 1.25rem;
+  margin: 0 0 var(--space-2);
+}
+
+.dev-panel__caption {
+  color: var(--ink-muted);
+  font-size: 0.9375rem;
+  margin: 0 0 var(--space-4);
+}
+
+.dev-panel__frame {
+  border: 1px solid var(--rule);
+  position: relative;
+  overflow: hidden;
+}
+
+.dev-panel__frame--single {
+  width: 256px;
+  height: 256px;
+  color: var(--ink);
+}
+
+.dev-panel__frame--tile {
+  width: 256px;
+  height: 256px;
+  color: var(--ink);
+}
+
+.dev-panel__frame--light {
+  height: 320px;
+  background: var(--parchment);
+  color: var(--ink);
+}
+
+.dev-panel__frame--ornament {
+  height: 160px;
 }
